@@ -1,24 +1,3 @@
-cat: /var/log/tempo_indisponibilidade.log: No such file or directory
-Tempo total de monitoramento: 720 horas
-Tempo de indisponibilidade:  horas
-Tempo de disponibilidade: 720 horas
-Percentual de disponibilidade: 100.00%
-root@AV04MSP:/opt# > /var/log/tempo_indisponibilidade.log
-root@AV04MSP:/opt# /opt/availability.sh
-Tempo total de monitoramento: 720 horas
-Tempo de indisponibilidade:  horas
-Tempo de disponibilidade: 720 horas
-Percentual de disponibilidade: 100.00%
-root@AV04MSP:/opt# vi /opt/availability.sh
-root@AV04MSP:/opt# /opt/availability.sh
-Tempo total de monitoramento: 720 horas
-Tempo de indisponibilidade:  horas
-Tempo de disponibilidade: 720 horas
-Percentual de disponibilidade: 100.00%
-root@AV04MSP:/opt#
-root@AV04MSP:/opt#
-root@AV04MSP:/opt#
-root@AV04MSP:/opt# cat /opt/availability.sh
 #!/bin/bash
 
 > /var/log/tempo_indisponibilidade.log
@@ -61,4 +40,3 @@ calcular_tempo_indisponibilidade() {
 
                                                                                     # Chamada da função para calcular a disponibilidade
                                                                                     calcular_disponibilidade
-
